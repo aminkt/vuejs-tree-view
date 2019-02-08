@@ -1,0 +1,115 @@
+.tree-view-root {
+  list-style: none;
+
+  .btn.btn-secondary {
+    background: #fff;
+  }
+  .btn {
+    border: none;
+  }
+  /*
+    .root-content, .leaf-content{
+      padding: 8px;
+      background: #fff;
+      display: inline-block;
+      border-radius: 4px;
+    }
+    */
+}
+
+.tree-view-root ul.child-container {
+  padding-right: 24px;
+  margin-top: 13px;
+}
+
+.tree-view-root .child-container {
+  font-size: 14px;
+  min-height: 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.tree-view-root .child-container li {
+  margin: 0 !important;
+  padding: 5px;
+  position: relative;
+  list-style: none;
+}
+
+.tree-view-root .child-container li > span,
+.tree-view-root .child-container li > i,
+.tree-view-root .child-container li > a {
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.tree-view-root .child-container li > a + a {
+  margin-right: 5px;
+}
+
+.tree-view-root .child-container li i.icon-open-state {
+  font-size: 16px;
+}
+
+.tree-view-root .child-container ul ul li:hover {
+  background: rgba(0, 0, 0, .015)
+}
+
+.tree-view-root .child-container li:after, .tree-view-root .child-container li:before {
+  content: '';
+  right: -10px;
+  position: absolute;
+  left: auto
+}
+
+.tree-view-root .child-container li:before {
+  border-right: 1px solid #999;
+  bottom: 50px;
+  height: 100%;
+  top: -12px;
+  width: 1px;
+}
+
+.tree-view-root .child-container li:after {
+  border-top: 1px solid #999;
+  height: 20px;
+  top: 25px;
+  width: 15px
+}
+
+.tree-view-root .child-container li span {
+  display: inline-block;
+  padding: 3px 5px;
+  text-decoration: none;
+}
+
+.tree-view-root .child-container > ul > li::after, .tree-view-root .child-container > ul > li:before {
+  border: 0
+}
+
+.tree-view-root .child-container li:last-child::before {
+  height: 37px
+}
+
+.tree-view-root .child-container > ul {
+  padding-right: 0
+}
+
+.tree-view-root ul.child-container ul {
+  padding-right: 24px;
+  padding-top: 0px
+}
+
+.tree-view-root {
+
+  li.item{
+    margin: 10px 0;
+  }
+
+  .btn-group > .btn:first-child {
+    border-radius: 0 0.25rem 0.25rem 0 !important;
+    min-width: 125px;
+    text-align: right;
+  }
+}
